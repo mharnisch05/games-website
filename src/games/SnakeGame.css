@@ -1,0 +1,115 @@
+.snake-game {
+  text-align: center;
+  color: white;
+}
+
+.snake-game h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.game-info {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.game-info p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.game-info span {
+  color: #ffd700;
+  margin-left: 0.5rem;
+}
+
+.game-board {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.grid {
+  position: relative;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border: 3px solid #ffd700;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+.snake-segment {
+  position: absolute;
+  background: linear-gradient(135deg, #4ecca3 0%, #2ea44f 100%);
+  border-radius: 2px;
+  transition: background 0.1s;
+}
+
+.snake-segment.head {
+  background: linear-gradient(135deg, #84ff00 0%, #4ecca3 100%);
+  box-shadow: 0 0 10px rgba(132, 255, 0, 0.6);
+}
+
+.food {
+  position: absolute;
+  background: radial-gradient(circle at 30% 30%, #ff6b6b 0%, #cc5555 100%);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 107, 107, 0.6);
+}
+
+.controls {
+  margin-top: 2rem;
+}
+
+.controls p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.start-button,
+.restart-button {
+  background: linear-gradient(135deg, #84ff00 0%, #4ecca3 100%);
+  border: none;
+  color: black;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(132, 255, 0, 0.3);
+}
+
+.start-button:hover,
+.restart-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(132, 255, 0, 0.5);
+}
+
+.game-over {
+  background: rgba(255, 107, 107, 0.2);
+  border: 2px solid #ff6b6b;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.game-over h3 {
+  color: #ff6b6b;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.game-over p {
+  font-size: 1.3rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    transform: scale(0.8);
+  }
+}

@@ -1,0 +1,114 @@
+.flappy-bird {
+  text-align: center;
+  color: white;
+}
+
+.flappy-bird h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.score-display {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.score-display span {
+  color: #ffd700;
+  margin-left: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.game-canvas {
+  border: 4px solid #ffd700;
+  border-radius: 10px;
+  margin: 1.5rem auto;
+  display: block;
+  cursor: pointer;
+  background: #667eea;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+  transition: transform 0.2s;
+}
+
+.game-canvas:hover {
+  transform: scale(1.02);
+}
+
+.start-button {
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+  border: none;
+  color: black;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(250, 112, 154, 0.3);
+  margin-top: 1rem;
+}
+
+.start-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(250, 112, 154, 0.5);
+}
+
+.controls {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 1rem;
+}
+
+.game-over-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.9);
+  padding: 2rem;
+  border-radius: 15px;
+  border: 2px solid #ffd700;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+}
+
+.game-over-modal h3 {
+  font-size: 2rem;
+  color: #fa709a;
+  margin-bottom: 1rem;
+}
+
+.game-over-modal p {
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.game-over-modal button {
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+  border: none;
+  color: black;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.game-over-modal button:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .game-canvas {
+    max-width: 100%;
+    height: auto;
+  }
+}
